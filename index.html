@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Rubik's Cube</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🧊 3D Rubik's Cube</h1>
+  <div id="controls">
+    <button onclick="rotateFace('U')">U</button>
+    <button onclick="rotateFace('D')">D</button>
+    <button onclick="rotateFace('L')">L</button>
+    <button onclick="rotateFace('R')">R</button>
+    <button onclick="rotateFace('F')">F</button>
+    <button onclick="rotateFace('B')">B</button>
+    <button onclick="scramble()">🔀 Scramble</button>
+    <button onclick="resetCube()">🔁 Reset</button>
+  </div>
+  <div class="scene">
+    <div class="cube" id="cube"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
